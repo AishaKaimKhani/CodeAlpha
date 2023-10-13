@@ -5,4 +5,4 @@ CSS, and JavaScript. Users can easily create, save,
 and organize their daily tasks. This app simplifies task
 management and provides a convenient way to track
 and prioritize tasks. 
-here is the link: file:///C:/Users/Muzammil%20Computers/Desktop/todolist.html
+here is the link: file:///E:/7th%20sem/Codealpha%20Internship/Task%202%20Todolist.html
