@@ -1,0 +1,87 @@
+#Task 2 Age-Calculator
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #E2D1F9,#317773);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #7E57C2;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="date"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #7E57C2;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #603A99;
+        }
+        p#result {
+            margin: 50px 0;
+            font-size: 1.2rem;
+            color: #7E57C2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+        </div>
+        <button onclick="calculateAge()">Calculate Age</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateAge() {
+    const dobInput = document.getElementById('dob').value;
+    const dob = new Date(dobInput);
+    const now = new Date();
+
+    let age = now.getFullYear() - dob.getFullYear();
+
+    if (now.getMonth() < dob.getMonth() || (now.getMonth() === dob.getMonth() && now.getDate() < dob.getDate())) {
+        age--;
+    }
+
+    const result = document.getElementById('result');
+    result.textContent = `Your age is ${age} years.`;
+}
+
+    </script>
+</body>
+</html>
