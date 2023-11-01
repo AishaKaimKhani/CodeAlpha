@@ -14,3 +14,12 @@ calculate users' ages based on their submitted date of birth,
 month, and year. JavaScript's built-in date and time functions
 simplify the age calculation process, making it easy to
 determine someone's age
+
+Task 3
+SurveyForm
+Build a Survey Form web application using HTML and CSS.
+Include essential questions like first name, last name, age,
+email, and more, tailored to the specific needs of the
+business or organization. 
+This Survey forms are valuable tools for
+gathering crucial data from the target audience
